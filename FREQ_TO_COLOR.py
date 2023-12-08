@@ -21,7 +21,7 @@ strip.begin()
 # Define a function to map a frequency to a color
 def freq_to_color(freq):
     # Use a simple linear mapping from frequency to hue
-    hue = int((freq - 20) / (20000 - 20) * 360) % 360
+    hue = int((freq - 100) / (2000 - 100) * 360) % 360
     # Convert hue to RGB using HSV color model
     h = hue / 60
     i = int(h)
