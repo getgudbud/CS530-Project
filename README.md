@@ -4,10 +4,42 @@ This is a project done by Diego De La Toba and Ian Sanchez as a final project fo
 # Goal
 The primary aim of this project is to design and implement an LED display system using a Raspberry Pi that synchronizes audio input in real-time, offering visually stunning patterns to enhance any audio experience. While digitizing and controlling LED lights may appear mundane, the real-world applications are vital
 
-# Installation for Computer
+# Setting Up Your RasberryPi
 ## Python Dependencies
 Code is compatible with Python 2.7 or 3.5. A few Python dependencies must also be installed:
 - Numpy
 - Scipy (for digital signal processing)
-- PyQtGraph (for GUI visualization)
+- RPI_WS281x (for led strip controll)
 - PyAudio (for recording audio with microphone)
+- Sounddevice (for mic input)
+
+### Install dependencies with `install.py`
+
+This project makes it very simple and easy to install all the dependencies you need to run the program. so you'll want to start off by entering the CS 530 directory with the following shell command:
+
+```shell
+cd CS530
+```
+
+Once you are in the CS530 directory, run this command:
+
+```shell
+sudo python3 install.py
+```
+
+This process should take a couple minutes assuming your raspberry pi has to install all of the dependencies however, this will truly depend on the speed of your internet and processor.
+
+## Modify `config.py` to meet your needs
+
+This file will contain all the configuration data that is variable between set ups. Our set up was using a strip with exactly 30 LEDs and our audio device index two. 
+
+```python
+'audio_device': 2,
+'led_count': 60,
+'led_pin': 18,
+'led_freq_hz': 800000,
+'led_dma': 10,
+'led_brightness': 255,
+'led_invert': False
+```
+
