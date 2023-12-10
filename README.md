@@ -15,28 +15,29 @@ cd CS530/installation/
 sudo python3 install.py
 ```
 
-## `place.py`
+## `frequency_to_color.py`
 Script will take in audio input and analyze different frequencies rersulting in different patterns.
 
 ```shell
 cd CS530/python/
 
-sudo python3 install.py
+sudo python3 frequency_to_color.py
 ```
-## `place.py`
+## `rainbow_volume_bar.py`
 Script will take in audio input and analyze the volume level to create a volume bar effect on the LED strip that starts at the middle of the strip branching out in both directions as the music gets louder. a unique rainbow pattern
 
 ```shell
 cd CS530/python/
 
-sudo python3 install.py
+sudo python3 rainbow_volume_bar.py
 ```
-## `place.py`
+## `volume_warning.py`
+Script will analyze volume levels and warn users about high volume levels. Green: Good. Yellow: Ok. Red: Bad.
 
 ```shell
 cd CS530/python/
 
-sudo python3 install.py
+sudo python3 volume_warning.py
 ```
 
 # Setting Up Your RasberryPi
