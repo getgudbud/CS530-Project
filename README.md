@@ -31,13 +31,13 @@ cd CS530/python/
 
 sudo python3 rainbow_volume_bar.py
 ```
-## `volume_warning.py`
-Script will analyze volume levels and warn users about high volume levels. Green: Good. Yellow: Ok. Red: Bad.
+## `clear_led.py`
+Script will turn off all LEDs in the case where they were left on from a previous script.
 
 ```shell
 cd CS530/python/
 
-sudo python3 volume_warning.py
+sudo python3 clear_led.py
 ```
 
 # Setting Up Your RasberryPi
